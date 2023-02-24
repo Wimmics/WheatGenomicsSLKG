@@ -1,7 +1,7 @@
 ## Wheat Genomics Literature KG SPARQL Queries
 
 
-## Prefixes of Used Ontologies and Vocabularies
+### Prefixes of Used Ontologies and Vocabularies
 
 
 ```sparql
