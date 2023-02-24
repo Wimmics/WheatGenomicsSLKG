@@ -1,47 +1,25 @@
-## Wheat-KG SPARQL Queries
-
-
-```sparql
-%endpoint http://d2kab.i3s.unice.fr/sparql
-```
-
-
-<div class="krn-spql"><div class="magic">Endpoint set to: http://d2kab.i3s.unice.fr/sparql</div></div>
-
-
-
-```sparql
-%show 20
-# Request whatever format is appropriate for the query type
-%format default
-
-# Activate table output
-%display table
-```
-
-
-<div class="krn-spql"><div class="magic">Result maximum size: 20</div><div class="magic">Request format: DEFAULT</div><div class="magic">Display: table</div></div>
+## Wheat Genomics Literature KG SPARQL Queries
 
 
 ## Prefixes of Used Ontologies and Vocabularies
 
 
 ```sparql
-%prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-%prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
-%prefix xsd:     <http://www.w3.org/2001/XMLSchema#> 
-%prefix schema:  <http://schema.org/> 
-%prefix owl:     <http://www.w3.org/2002/07/owl#> 
-%prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
-%prefix oa:      <http://www.w3.org/ns/oa#> 
-%prefix ncbi:    <http://identifiers.org/taxonomy/> 
-%prefix dct:     <http://purl.org/dc/terms/> 
-%prefix frbr:    <http://purl.org/vocab/frbr/core#> 
-%prefix fabio:   <http://purl.org/spar/fabio/> 
-%prefix obo:     <http://purl.obolibrary.org/obo/> 
-%prefix bibo:    <http://purl.org/ontology/bibo/> 
-%prefix d2kab:   <http://ns.inria.fr/d2kab/> 
-%prefix dc:      <http://purl.org/dc/terms/> 
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
+prefix xsd:     <http://www.w3.org/2001/XMLSchema#> 
+prefix schema:  <http://schema.org/> 
+prefix owl:     <http://www.w3.org/2002/07/owl#> 
+prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
+prefix oa:      <http://www.w3.org/ns/oa#> 
+prefix ncbi:    <http://identifiers.org/taxonomy/> 
+prefix dct:     <http://purl.org/dc/terms/> 
+prefix frbr:    <http://purl.org/vocab/frbr/core#> 
+prefix fabio:   <http://purl.org/spar/fabio/> 
+prefix obo:     <http://purl.obolibrary.org/obo/> 
+prefix bibo:    <http://purl.org/ontology/bibo/> 
+prefix d2kab:   <http://ns.inria.fr/d2kab/> 
+prefix dc:      <http://purl.org/dc/terms/> 
 ```
 
 
