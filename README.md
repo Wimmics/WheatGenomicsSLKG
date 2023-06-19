@@ -2,7 +2,7 @@ The **Wheat Genomics Literature KG** is a FAIR knowledge graph that exploits the
 
 ## Semantic Data Model 
 
-The core part of the **Wheat Genomics Literature KG** data model is based on the [W3C Web Annotation Ontology (OA)](https://www.w3.org/ns/oa)  which has been complemented by nine different vocabularies to describe documents metadata, provenance information. 
+The core part of the **Wheat Genomics Scientific Literature KG** data model is based on the [W3C Web Annotation Ontology (OA)](https://www.w3.org/ns/oa)  which has been complemented by nine different vocabularies to describe documents metadata, provenance information. 
 
 |Vocabulary | Prefix  | URI |
 |--------------| ------------- | ------------- |
