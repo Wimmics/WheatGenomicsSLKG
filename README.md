@@ -5,11 +5,11 @@ In this corpus, the PubMed identifier, title and abstract of each publication ar
 
 The figure below illustrates an example of PubMed publication where three types of NEs are recognised: genes (e.g., __Sr2__, __Lr27__, __Lr34__), phenotypes (e.g., __leaf rust resistance__, __resistance to stem rust__, __powdery mildew resistance__) and taxon name (e.g., __wheat__). 
 
-Mentions of phenotype and taxon are linked to existing entities defined respectively in the Wheat Trait Ontology (WTO) and NCBI taxonomy.
-
 <p align="center">
-  <img src="Sample-NER.jpg" width="650" title="hover text" alt="Example of NE recognition and linking in a PubMed publication">
+  <img src="Sample-NER.jpg" width="650" title="Example of NE recognition and linking in a PubMed publication" alt="Gene, phenotype and taxon named entities recognized and in a PubMed publication">
 </p>
+
+Mentions of phenotype and taxon are linked to existing entities defined respectively in the Wheat Trait Ontology (WTO) and NCBI taxonomy.
 
 ## Semantic Data Model 
 
