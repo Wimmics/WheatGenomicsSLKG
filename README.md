@@ -7,8 +7,9 @@ The figure below illustrates an example of PubMed publication where three types 
 
 Mentions of phenotype and taxon are linked to existing entities defined respectively in the Wheat Trait Ontology (WTO) and NCBI taxonomy.
 
-![Example of NE recognition and linking in a PubMed publication](Sample-NER.jpg "a title" | width=650)
-
+<p align="center">
+  <img src="Sample-NER.jpg" width="650" title="hover text" alt="Example of NE recognition and linking in a PubMed publication">
+</p>
 
 ## Semantic Data Model 
 
