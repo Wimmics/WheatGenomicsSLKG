@@ -1,5 +1,5 @@
 
-The **Wheat Genomics Scientific Literature KG** (WheatGenomicsKG) is a FAIR knowledge graph that exploits the Semantic Web technologies to integrate information about Named Entities (NE) extracted automatically from a corpus of PubMed scientific papers on wheat genetics and genomics.
+The **Wheat Genomics Scientific Literature KG** (WheatGenomicsSLKG) is a FAIR knowledge graph that exploits the Semantic Web technologies to integrate information about Named Entities (NE) extracted automatically from a corpus of PubMed scientific papers on wheat genetics and genomics.
 
 In this corpus, the PubMed identifier, title and abstract of each publication are provided. In some cases, the abstract of a publication is split in sub-sections. We used the [AlvisNLP]'https://github.com/Bibliome/alvisnlp) pipeline to extract Named entities of types **genes**, **phenotypes**, **taxon names** and **varieties** mentioned in the title and the abstract of publications, and the relationships between wheat mentions of varieties and phenotypes.
 
@@ -13,7 +13,7 @@ Mentions of phenotype and taxon are linked to existing entities defined respecti
 
 ## Semantic Data Model 
 
-The core part of the **WheatGenomicsKG** data model is based on the [W3C Web Annotation Ontology (OA)](https://www.w3.org/ns/oa)  which has been complemented by different vocabularies to describe documents metadata: 
+The core part of the **WheatGenomicsSLKG** data model is based on the [W3C Web Annotation Ontology (OA)](https://www.w3.org/ns/oa)  which has been complemented by different vocabularies to describe documents metadata: 
 
 |Vocabulary | Prefix  | URI |
 |--------------| ------------- | ------------- |
