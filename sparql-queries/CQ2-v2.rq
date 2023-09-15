@@ -14,7 +14,9 @@ prefix bibo: <http://purl.org/ontology/bibo/>
 prefix d2kab:   <http://ns.inria.fr/d2kab/> 
 prefix dc: <http://purl.org/dc/terms/> 
 
-SELECT distinct ?geneName ?paper1 ?marker ?paper2 WHERE {
+SELECT distinct ?geneName ?paper1 ?marker ?paper2 
+FROM <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+WHERE {
 {
 SELECT distinct ?geneName ?gene ?paper1 WHERE {
   ?a1 a oa:Annotation; 

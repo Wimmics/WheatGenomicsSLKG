@@ -14,21 +14,24 @@ prefix bibo: <http://purl.org/ontology/bibo/>
 prefix d2kab:   <http://ns.inria.fr/d2kab/> 
 prefix dc: <http://purl.org/dc/terms/> 
 
-SELECT ?GeneName  (count(distinct ?paper) as ?NbOcc) where {
+SELECT ?GeneName (count(distinct ?paper) as ?NbOcc) 
+FROM NAMED <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+WHERE {
+  GRAPH <http://ns.inria.fr/d2kab/wheatgenomicsslkg> { 
+     ?a1 a oa:Annotation; 
+      oa:hasTarget [ oa:hasSource ?source1 ] ;  
+      oa:hasBody [ a d2kab:Phenotype; skos:prefLabel "resistance to Leaf Rust"] .
 
-?a1 a oa:Annotation; 
-    oa:hasTarget [ oa:hasSource ?source1 ];  
-    oa:hasBody [ a d2kab:Phenotype; skos:prefLabel "resistance to Leaf Rust"].
-
-?source1 frbr:partOf+ ?paper.
+   ?source1 frbr:partOf+ ?paper .
     
-?a a oa:Annotation; 
-    oa:hasTarget [ oa:hasSource ?source ];
-    oa:hasBody [ a d2kab:Gene; skos:prefLabel ?GeneName ].
+   ?a a oa:Annotation ; 
+      oa:hasTarget [ oa:hasSource ?source ] ;
+      oa:hasBody [ a d2kab:Gene; skos:prefLabel ?GeneName ].
 
-?source frbr:partOf+ ?paper.
+   ?source frbr:partOf+ ?paper.
 
-?paper a fabio:ResearchPaper.
+   ?paper a fabio:ResearchPaper.
+}
 }
 GROUP BY ?GeneName 
 HAVING (count(distinct ?paper) > 1)

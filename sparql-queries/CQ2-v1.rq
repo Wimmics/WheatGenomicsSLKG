@@ -15,8 +15,9 @@ prefix d2kab:   <http://ns.inria.fr/d2kab/>
 prefix dc: <http://purl.org/dc/terms/> 
 
 SELECT distinct ?GeneName (GROUP_CONCAT(distinct ?marker; SEPARATOR="-") as ?markers) ?paper ?year 
+FROM NAMED <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
 WHERE {
-
+GRAPH <http://ns.inria.fr/d2kab/wheatgenomicsslkg> { 
 ?a1 a oa:Annotation ;
     oa:hasTarget [ oa:hasSource ?source1 ];
     oa:hasBody [ a d2kab:Gene ; skos:prefLabel ?GeneName].
@@ -37,5 +38,6 @@ WHERE {
 
 ?paper a fabio:ResearchPaper ;  dct:title ?source3; dct:issued ?year .
 FILTER (?year >= "2010"^^xsd:gYear)
+}
 }
 GROUP BY ?GeneName?paper ?year
