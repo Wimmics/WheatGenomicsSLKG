@@ -446,7 +446,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Aspergillus aculeatus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000050>
+<http://opendata.inrae.fr/wto/0000050>
       a       d2kab:Phenotype ;
       skos:prefLabel "response to environmental condition" .
 
@@ -634,7 +634,7 @@
       a       d2kab:Variety ;
       skos:prefLabel "Sahara" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000188>
+<http://opendata.inrae.fr/wto/0000188>
       a       d2kab:Phenotype ;
       skos:prefLabel "response to water stress" .
 
@@ -814,7 +814,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Rht14" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000363>
+<http://opendata.inrae.fr/wto/0000363>
       a       d2kab:Phenotype ;
       skos:prefLabel "virus resistance" .
 
@@ -878,7 +878,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Prevotella copri" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000495>
+<http://opendata.inrae.fr/wto/0000495>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to cereal cyst nematode" .
 
@@ -938,7 +938,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xgwm274" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000361>
+<http://opendata.inrae.fr/wto/0000361>
       a       d2kab:Phenotype ;
       skos:prefLabel "toxin sensitivity" .
 
@@ -1014,7 +1014,7 @@
       a       d2kab:Variety ;
       skos:prefLabel "Mediator" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000360>
+<http://opendata.inrae.fr/wto/0000360>
       a       d2kab:Phenotype ;
       skos:prefLabel "toxin resistance" .
 
@@ -1098,7 +1098,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Stb6" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000222>
+<http://opendata.inrae.fr/wto/0000222>
       a       d2kab:Phenotype ;
       skos:prefLabel "flour colour" .
 
@@ -1578,7 +1578,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Gli-B2" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000223>
+<http://opendata.inrae.fr/wto/0000223>
       a       d2kab:Phenotype ;
       skos:prefLabel "flour composition" .
 
@@ -1766,7 +1766,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Acph-U1" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000531>
+<http://opendata.inrae.fr/wto/0000531>
       a       d2kab:Phenotype ;
       skos:prefLabel "cadmium toxicity" .
 
@@ -1954,7 +1954,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "R187" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000537>
+<http://opendata.inrae.fr/wto/0000537>
       a       d2kab:Phenotype ;
       skos:prefLabel "manganese toxicity" .
 
@@ -2078,7 +2078,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Helicoverpa armigera granulovirus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000534>
+<http://opendata.inrae.fr/wto/0000534>
       a       d2kab:Phenotype ;
       skos:prefLabel "copper toxicity" .
 
@@ -2586,7 +2586,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Aspergillus sp." .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000171>
+<http://opendata.inrae.fr/wto/0000171>
       a       d2kab:Phenotype ;
       skos:prefLabel "number of grains per square meter" .
 
@@ -2910,7 +2910,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Pm38" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000175>
+<http://opendata.inrae.fr/wto/0000175>
       a       d2kab:Phenotype ;
       skos:prefLabel "pest resistance" .
 
@@ -3110,7 +3110,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Eps-Am1" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000483>
+<http://opendata.inrae.fr/wto/0000483>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Fusarium head blight" .
 
@@ -3174,7 +3174,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Elymus sibiricus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000179>
+<http://opendata.inrae.fr/wto/0000179>
       a       d2kab:Phenotype ;
       skos:prefLabel "pre-harvest sprouting" .
 
@@ -3446,7 +3446,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Aspergillus ochraceus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000340>
+<http://opendata.inrae.fr/wto/0000340>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to a fungal pathogen" .
 
@@ -3746,7 +3746,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Aegilops triuncialis" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000344>
+<http://opendata.inrae.fr/wto/0000344>
       a       d2kab:Phenotype ;
       skos:prefLabel "phophorus limitation" .
 
@@ -3846,7 +3846,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "HT29" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000219>
+<http://opendata.inrae.fr/wto/0000219>
       a       d2kab:Phenotype ;
       skos:prefLabel "endosperm texture" .
 
@@ -3986,7 +3986,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Tenericutes" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000216>
+<http://opendata.inrae.fr/wto/0000216>
       a       d2kab:Phenotype ;
       skos:prefLabel "cytoplasmic male sterility" .
 
@@ -4058,7 +4058,7 @@
       a       d2kab:Variety ;
       skos:prefLabel "Revelation" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000215>
+<http://opendata.inrae.fr/wto/0000215>
       a       d2kab:Phenotype ;
       skos:prefLabel "crumb firmness" .
 
@@ -4454,7 +4454,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Physconia grisea" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000071>
+<http://opendata.inrae.fr/wto/0000071>
       a       d2kab:Phenotype ;
       skos:prefLabel "crop yield" .
 
@@ -4494,7 +4494,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xwmc441" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000070>
+<http://opendata.inrae.fr/wto/0000070>
       a       d2kab:Phenotype ;
       skos:prefLabel "coleoptile length" .
 
@@ -4794,7 +4794,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xwmc453" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000073>
+<http://opendata.inrae.fr/wto/0000073>
       a       d2kab:Phenotype ;
       skos:prefLabel "ear emergence time" .
 
@@ -4970,7 +4970,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Thevetia peruviana" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000078>
+<http://opendata.inrae.fr/wto/0000078>
       a       d2kab:Phenotype ;
       skos:prefLabel "leaf number" .
 
@@ -5158,7 +5158,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Yr78" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000253>
+<http://opendata.inrae.fr/wto/0000253>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to arthropod" .
 
@@ -5386,7 +5386,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "DQ2" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000246>
+<http://opendata.inrae.fr/wto/0000246>
       a       d2kab:Phenotype ;
       skos:prefLabel "pathogen resistance" .
 
@@ -5662,7 +5662,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Dietzia sp. HRJ2" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000553>
+<http://opendata.inrae.fr/wto/0000553>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Rhizoctonia root rot" .
 
@@ -5742,7 +5742,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xpsr454" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000249>
+<http://opendata.inrae.fr/wto/0000249>
       a       d2kab:Phenotype ;
       skos:prefLabel "potassium deficiency" .
 
@@ -5802,7 +5802,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Penicillium simile" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000551>
+<http://opendata.inrae.fr/wto/0000551>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Powdery Mildew" .
 
@@ -6102,7 +6102,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Halobacterium" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000554>
+<http://opendata.inrae.fr/wto/0000554>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Septoria Leaf Blotch" .
 
@@ -6582,7 +6582,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Synapsis" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000190>
+<http://opendata.inrae.fr/wto/0000190>
       a       d2kab:Phenotype ;
       skos:prefLabel "seed dormancy" .
 
@@ -7150,7 +7150,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Fusarium sacchari" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000198>
+<http://opendata.inrae.fr/wto/0000198>
       a       d2kab:Phenotype ;
       skos:prefLabel "spikelet number" .
 
@@ -7262,7 +7262,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Monilinia fructicola" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000241>
+<http://opendata.inrae.fr/wto/0000241>
       a       d2kab:Phenotype ;
       skos:prefLabel "nitrogen limitation" .
 
@@ -7514,7 +7514,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Gli-A2" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000101>
+<http://opendata.inrae.fr/wto/0000101>
       a       d2kab:Phenotype ;
       skos:prefLabel "response to abiotic stress" .
 
@@ -7594,7 +7594,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Nostoc" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000233>
+<http://opendata.inrae.fr/wto/0000233>
       a       d2kab:Phenotype ;
       skos:prefLabel "insect resistance" .
 
@@ -7742,7 +7742,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Pleosporaceae" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000231>
+<http://opendata.inrae.fr/wto/0000231>
       a       d2kab:Phenotype ;
       skos:prefLabel "hard textured wheat" .
 
@@ -7854,7 +7854,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Glycyrrhiza lepidota" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000104>
+<http://opendata.inrae.fr/wto/0000104>
       a       d2kab:Phenotype ;
       skos:prefLabel "response to vernalization" .
 
@@ -7934,7 +7934,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xgwm33" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000369>
+<http://opendata.inrae.fr/wto/0000369>
       a       d2kab:Phenotype ;
       skos:prefLabel "winter hardiness" .
 
@@ -8006,7 +8006,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Fusarium equiseti" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000102>
+<http://opendata.inrae.fr/wto/0000102>
       a       d2kab:Phenotype ;
       skos:prefLabel "response to biotic stress" .
 
@@ -8338,7 +8338,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Gli-Dt1" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000549>
+<http://opendata.inrae.fr/wto/0000549>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Leaf Rust" .
 
@@ -8610,7 +8610,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Populus euphratica" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000095>
+<http://opendata.inrae.fr/wto/0000095>
       a       d2kab:Phenotype ;
       skos:prefLabel "nutrient deficiency" .
 
@@ -8918,7 +8918,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xgpw362" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000099>
+<http://opendata.inrae.fr/wto/0000099>
       a       d2kab:Phenotype ;
       skos:prefLabel "plant height" .
 
@@ -9390,7 +9390,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "AGL6" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000145>
+<http://opendata.inrae.fr/wto/0000145>
       a       d2kab:Phenotype ;
       skos:prefLabel "grain number per ear" .
 
@@ -9542,7 +9542,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Yr81" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000143>
+<http://opendata.inrae.fr/wto/0000143>
       a       d2kab:Phenotype ;
       skos:prefLabel "grain hardness" .
 
@@ -9734,7 +9734,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Striga hermonthica" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000136>
+<http://opendata.inrae.fr/wto/0000136>
       a       d2kab:Phenotype ;
       skos:prefLabel "female sterility" .
 
@@ -9826,7 +9826,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Trichoderma lycogaloides" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000002>
+<http://opendata.inrae.fr/wto/0000002>
       a       d2kab:Phenotype ;
       skos:prefLabel "level of polyphenol oxidase activity" .
 
@@ -9902,7 +9902,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Naegleria fowleri" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000267>
+<http://opendata.inrae.fr/wto/0000267>
       a       d2kab:Phenotype ;
       skos:prefLabel "soft grain texture" .
 
@@ -9914,7 +9914,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Pseudopleuronectes americanus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000001>
+<http://opendata.inrae.fr/wto/0000001>
       a       d2kab:Phenotype ;
       skos:prefLabel "plant property" .
 
@@ -9994,7 +9994,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Coniochaeta ligniaria" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000311>
+<http://opendata.inrae.fr/wto/0000311>
       a       d2kab:Phenotype ;
       skos:prefLabel "drought tolerance" .
 
@@ -10014,7 +10014,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Serratia liquefaciens" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000577>
+<http://opendata.inrae.fr/wto/0000577>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Rhizoctonia Root Rot" .
 
@@ -10090,7 +10090,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Naegleria" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000310>
+<http://opendata.inrae.fr/wto/0000310>
       a       d2kab:Phenotype ;
       skos:prefLabel "dough strength" .
 
@@ -10162,7 +10162,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Thinopyrum intermedium" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000006>
+<http://opendata.inrae.fr/wto/0000006>
       a       d2kab:Phenotype ;
       skos:prefLabel "heritable trait" .
 
@@ -11338,7 +11338,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "W7984" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000262>
+<http://opendata.inrae.fr/wto/0000262>
       a       d2kab:Phenotype ;
       skos:prefLabel "seed colour" .
 
@@ -11406,7 +11406,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Glu1" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000261>
+<http://opendata.inrae.fr/wto/0000261>
       a       d2kab:Phenotype ;
       skos:prefLabel "salt resistance" .
 
@@ -11762,7 +11762,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Nor1" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000264>
+<http://opendata.inrae.fr/wto/0000264>
       a       d2kab:Phenotype ;
       skos:prefLabel "sensitivity to photoperiod" .
 
@@ -11874,7 +11874,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Planomicrobium" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000561>
+<http://opendata.inrae.fr/wto/0000561>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Stem Rust" .
 
@@ -11938,7 +11938,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "D180" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000560>
+<http://opendata.inrae.fr/wto/0000560>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Stagonospora nodorum" .
 
@@ -12146,7 +12146,7 @@
       a       d2kab:Variety ;
       skos:prefLabel "Tibet" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000432>
+<http://opendata.inrae.fr/wto/0000432>
       a       d2kab:Phenotype ;
       skos:prefLabel "Russian wheat aphid resistance" .
 
@@ -12318,7 +12318,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Berberis vulgaris" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000127>
+<http://opendata.inrae.fr/wto/0000127>
       a       d2kab:Phenotype ;
       skos:prefLabel "bread making quality" .
 
@@ -12402,11 +12402,11 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Pseudoroegneria" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000562>
+<http://opendata.inrae.fr/wto/0000562>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Stripe Rust" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000259>
+<http://opendata.inrae.fr/wto/0000259>
       a       d2kab:Phenotype ;
       skos:prefLabel "response to water deficiency" .
 
@@ -12530,7 +12530,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "H20" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000568>
+<http://opendata.inrae.fr/wto/0000568>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to wheat streak mosaic virus" .
 
@@ -12622,7 +12622,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Adk" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000567>
+<http://opendata.inrae.fr/wto/0000567>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to orange wheat blossom midge" .
 
@@ -12694,7 +12694,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Calotropis procera" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000566>
+<http://opendata.inrae.fr/wto/0000566>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to loose smut" .
 
@@ -12754,7 +12754,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Pseudomonas fluorescens Q8r1-96" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000308>
+<http://opendata.inrae.fr/wto/0000308>
       a       d2kab:Phenotype ;
       skos:prefLabel "dough extensibility" .
 
@@ -12906,7 +12906,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Amomum maximum" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000304>
+<http://opendata.inrae.fr/wto/0000304>
       a       d2kab:Phenotype ;
       skos:prefLabel "cold resistance" .
 
@@ -13242,11 +13242,11 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Aphis gossypii" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000160>
+<http://opendata.inrae.fr/wto/0000160>
       a       d2kab:Phenotype ;
       skos:prefLabel "male sterility" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000293>
+<http://opendata.inrae.fr/wto/0000293>
       a       d2kab:Phenotype ;
       skos:prefLabel "Hessian fly resistance" .
 
@@ -13626,7 +13626,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Pectobacterium carotovorum subsp. carotovorum" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000296>
+<http://opendata.inrae.fr/wto/0000296>
       a       d2kab:Phenotype ;
       skos:prefLabel "aphid resistance" .
 
@@ -13862,7 +13862,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Subgroup A" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000168>
+<http://opendata.inrae.fr/wto/0000168>
       a       d2kab:Phenotype ;
       skos:prefLabel "tiller number per plant" .
 
@@ -14078,7 +14078,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Sitobion" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000464>
+<http://opendata.inrae.fr/wto/0000464>
       a       d2kab:Phenotype ;
       skos:prefLabel "high temperature resistance" .
 
@@ -14162,15 +14162,15 @@
       a       d2kab:Gene ;
       skos:prefLabel "Est-5" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000596>
+<http://opendata.inrae.fr/wto/0000596>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Fusarium spp." .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000463>
+<http://opendata.inrae.fr/wto/0000463>
       a       d2kab:Phenotype ;
       skos:prefLabel "heavy metal toxicity" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000330>
+<http://opendata.inrae.fr/wto/0000330>
       a       d2kab:Phenotype ;
       skos:prefLabel "metal toxicity" .
 
@@ -14250,7 +14250,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Bacillus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000595>
+<http://opendata.inrae.fr/wto/0000595>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to Bipolaris sorokiniana" .
 
@@ -14302,7 +14302,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Bacillales" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000025>
+<http://opendata.inrae.fr/wto/0000025>
       a       d2kab:Phenotype ;
       skos:prefLabel "high grain protein content" .
 
@@ -14346,11 +14346,11 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Woodfordia fruticosa" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000335>
+<http://opendata.inrae.fr/wto/0000335>
       a       d2kab:Phenotype ;
       skos:prefLabel "nematode resistance" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000202>
+<http://opendata.inrae.fr/wto/0000202>
       a       d2kab:Phenotype ;
       skos:prefLabel "thousand kernel weight" .
 
@@ -14594,7 +14594,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Nitrosospira" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000029>
+<http://opendata.inrae.fr/wto/0000029>
       a       d2kab:Phenotype ;
       skos:prefLabel "lack of vernalization requirement" .
 
@@ -14742,7 +14742,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Pinb" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000205>
+<http://opendata.inrae.fr/wto/0000205>
       a       d2kab:Phenotype ;
       skos:prefLabel "aluminium resistance" .
 
@@ -15094,7 +15094,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Glycomyces algeriensis" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000510>
+<http://opendata.inrae.fr/wto/0000510>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to wheat blast" .
 
@@ -15182,7 +15182,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Dn7" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000506>
+<http://opendata.inrae.fr/wto/0000506>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to rust" .
 
@@ -15618,7 +15618,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Streptococcus gordonii" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000508>
+<http://opendata.inrae.fr/wto/0000508>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to septoria" .
 
@@ -15846,7 +15846,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Tobacco necrosis virus A" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000151>
+<http://opendata.inrae.fr/wto/0000151>
       a       d2kab:Phenotype ;
       skos:prefLabel "harvest index" .
 
@@ -16158,7 +16158,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Lr59" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000590>
+<http://opendata.inrae.fr/wto/0000590>
       a       d2kab:Phenotype ;
       skos:prefLabel "high molecular weight glutenin subunit" .
 
@@ -16318,7 +16318,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Setaria italica" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000451>
+<http://opendata.inrae.fr/wto/0000451>
       a       d2kab:Phenotype ;
       skos:prefLabel "arsenic toxicity" .
 
@@ -16358,7 +16358,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xwg241" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000450>
+<http://opendata.inrae.fr/wto/0000450>
       a       d2kab:Phenotype ;
       skos:prefLabel "aluminium toxicity" .
 
@@ -16374,7 +16374,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "RL6081" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000583>
+<http://opendata.inrae.fr/wto/0000583>
       a       d2kab:Phenotype ;
       skos:prefLabel "gluten strength" .
 
@@ -16438,7 +16438,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xbarc240" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000146>
+<http://opendata.inrae.fr/wto/0000146>
       a       d2kab:Phenotype ;
       skos:prefLabel "protein content of seed" .
 
@@ -16642,7 +16642,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Rf3" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000321>
+<http://opendata.inrae.fr/wto/0000321>
       a       d2kab:Phenotype ;
       skos:prefLabel "frost resistance" .
 
@@ -16650,7 +16650,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Cryptococcus terreus" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000587>
+<http://opendata.inrae.fr/wto/0000587>
       a       d2kab:Phenotype ;
       skos:prefLabel "glutenin content" .
 
@@ -16726,15 +16726,15 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Pichia kudriavzevii" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000453>
+<http://opendata.inrae.fr/wto/0000453>
       a       d2kab:Phenotype ;
       skos:prefLabel "boron toxicity" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000586>
+<http://opendata.inrae.fr/wto/0000586>
       a       d2kab:Phenotype ;
       skos:prefLabel "gliadin content" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000017>
+<http://opendata.inrae.fr/wto/0000017>
       a       d2kab:Phenotype ;
       skos:prefLabel "early heading" .
 
@@ -16894,7 +16894,7 @@
       a       d2kab:Gene ;
       skos:prefLabel "Pm65" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000326>
+<http://opendata.inrae.fr/wto/0000326>
       a       d2kab:Phenotype ;
       skos:prefLabel "heat resistance" .
 
@@ -16946,7 +16946,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xwmc47" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000325>
+<http://opendata.inrae.fr/wto/0000325>
       a       d2kab:Phenotype ;
       skos:prefLabel "greenbug resistance" .
 
@@ -17078,7 +17078,7 @@
       a       d2kab:Taxon ;
       skos:prefLabel "Undibacterium" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000501>
+<http://opendata.inrae.fr/wto/0000501>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to mildew" .
 
@@ -17110,7 +17110,7 @@
       a       d2kab:Marker ;
       skos:prefLabel "Xgwm259" .
 
-<http://opendata.inrae.fr/wto/v3.0/thesaurus/WTO_0000500>
+<http://opendata.inrae.fr/wto/0000500>
       a       d2kab:Phenotype ;
       skos:prefLabel "resistance to imidazolinone" .
 
