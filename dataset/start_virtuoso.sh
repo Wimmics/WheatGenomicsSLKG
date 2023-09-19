@@ -12,6 +12,6 @@ docker run --name $VIRTUOSO_CONTAINER \
   -e SPARQL_UPDATE=true \
   -e DEFAULT_GRAPH=http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg \
   -v /home/yacoubi/d2kab/virtuosodb:/database \
-  -v /home/yacoubi/d2kab/WheatGenomicsSLKG/dataset:/dataset_wheatgenomicslkg \
-  -v /home/yacoubi/d2kab/RiceGenimocsSLKG/dataset:/dataset_ricegenomicslkg \
+  -v /home/yacoubi/d2kab/WheatGenomicsSLKG/dataset:/dataset_wheatgenomicsslkg \
+  -v /home/yacoubi/d2kab/RiceGenimocsSLKG/dataset:/dataset_ricegenomicsslkg \
   -d openlink/virtuoso-opensource-7:latest
