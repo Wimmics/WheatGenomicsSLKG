@@ -14,20 +14,37 @@ prefix bibo: <http://purl.org/ontology/bibo/>
 prefix d2kab:   <http://ns.inria.fr/d2kab/> 
 prefix dc: <http://purl.org/dc/terms/> 
 
-SELECT distinct ?variety ?paper WHERE {
-
-  ?rel1 d2kab:hasVariety ?a1 ;
-           d2kab:hasPhenotype ?a2 .
+SELECT distinct ?paper ?Title ?GeneName ?WTOtrait
+FROM  <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+FROM  <http://ns.inria.fr/d2kab/ontology/wto/v3>
+WHERE {
+   
+  ?a1 a oa:Annotation; 
+     oa:hasTarget [ oa:hasSource ?source1 ];
+     oa:hasBody  [ a d2kab:Gene; skos:prefLabel ?GeneName ].
   
-  ?a1 a oa:Annotation ;
-             oa:hasTarget [ oa:hasSource ?source1 ];  
-             oa:hasBody [ a d2kab:Variety ; skos:prefLabel ?variety ] .
+  ?source1 frbr:partOf+ ?paper . 
 
-  ?a2 a oa:Annotation ;
-             oa:hasTarget  [ oa:hasSource ?source2 ] ;
-             oa:hasBody [ skos:prefLabel "heat resistance"  ]  .
-
-  ?source1 frbr:partOf+ ?paper.
-  ?source2 frbr:partOf+ ?paper. 
-  ?paper  a fabio:ResearchPaper .
+  ?a2 a oa:Annotation; 
+      oa:hasTarget [ oa:hasSource ?source2 ]; 
+      oa:hasBody ?body.
+   
+  ?source2 frbr:partOf+ ?paper .
+  
+   {
+   ?body rdf:type ?class; skos:prefLabel ?WTOtrait .
+   ?class rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> .
+   }
+    UNION 
+    {
+    ?body rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340>; 
+          rdfs:label ?WTOtrait .
+    }
+    UNION
+    {
+      ?body skos:broader* ?concept ; skos:prefLabel ?WTOtrait .
+      ?concept rdf:type [ rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> ].     
+    }
+   ?paper a fabio:ResearchPaper ; dct:title ?titleURI .
+   ?titleURI rdf:value ?Title.
 }

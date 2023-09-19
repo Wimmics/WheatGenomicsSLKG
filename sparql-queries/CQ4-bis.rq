@@ -1,0 +1,50 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX frbr: <http://purl.org/vocab/frbr/core#>
+PREFIX frbr: <http://purl.org/vocab/frbr/core#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?paper ?title ?geneName ?ncbiTaxon ?ncbiTaxonName
+FROM NAMED <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+WHERE {
+  
+  SERVICE <https://taxref.mnhn.fr/sparql>
+  {
+     select ?ncbiTaxon ?ncbiTaxonName where {
+		?ncbiTaxon rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_5296>; 
+		rdfs:label ?ncbiTaxonName .
+   } 
+   } 
+   
+  GRAPH <http://ns.inria.fr/d2kab/wheatgenomicsslkg> {  
+  
+  ?a1 a oa:Annotation; 
+     oa:hasTarget [ oa:hasSource ?source1 ];
+     oa:hasBody  [ a d2kab:Gene; skos:prefLabel ?geneName ].
+  ?source1 frbr:partOf+ ?paper . 
+    
+  ?a2 a oa:Annotation; 
+      oa:hasTarget [ oa:hasSource ?source2 ]; 
+      oa:hasBody ?ncbiTaxon .
+  
+  ?source2 frbr:partOf+ ?paper .
+        
+  ?paper a fabio:ResearchPaper ; dct:title ?titleURI .
+  ?titleURI rdf:value ?title.
+        
+}
+}
+

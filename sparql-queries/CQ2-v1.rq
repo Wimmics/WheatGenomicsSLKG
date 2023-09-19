@@ -15,7 +15,8 @@ prefix d2kab:   <http://ns.inria.fr/d2kab/>
 prefix dc: <http://purl.org/dc/terms/> 
 
 SELECT distinct ?GeneName (GROUP_CONCAT(distinct ?marker; SEPARATOR="-") as ?markers) ?paper ?year 
-FROM NAMED <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+FROM NAMED <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
+FROM NAMED <http://ns.inria.fr/d2kab/ontology/wto/v3>
 WHERE {
 GRAPH <http://ns.inria.fr/d2kab/wheatgenomicsslkg> { 
 ?a1 a oa:Annotation ;
@@ -32,12 +33,15 @@ GRAPH <http://ns.inria.fr/d2kab/wheatgenomicsslkg> {
 
 ?a3 a oa:Annotation; 
     oa:hasTarget [ oa:hasSource ?source3 ];
-    oa:hasBody [ skos:prefLabel "resistance to Stripe Rust"; a d2kab:Phenotype  ] .
+    oa:hasBody ?body.
 
 ?source3 frbr:partOf+ ?paper . 
 
 ?paper a fabio:ResearchPaper ;  dct:title ?source3; dct:issued ?year .
 FILTER (?year >= "2010"^^xsd:gYear)
+}
+GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3> {
+       ?body skos:prefLabel "resistance to Stripe rust" .
 }
 }
 GROUP BY ?GeneName?paper ?year

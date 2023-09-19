@@ -32,10 +32,10 @@ WHERE {
    ?source frbr:partOf+ ?paper.
 
    ?paper a fabio:ResearchPaper.
- }
-GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3> {
+}
+   GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3> {
        ?body skos:prefLabel "resistance to Leaf rust" .
- }
+}
 }
 GROUP BY ?GeneName 
 HAVING (count(distinct ?paper) > 1)
