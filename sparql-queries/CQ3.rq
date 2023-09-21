@@ -1,4 +1,4 @@
-prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
 prefix xsd:     <http://www.w3.org/2001/XMLSchema#> 
 prefix schema:  <http://schema.org/> 
@@ -10,41 +10,54 @@ prefix dct:     <http://purl.org/dc/terms/>
 prefix frbr:    <http://purl.org/vocab/frbr/core#> 
 prefix fabio:   <http://purl.org/spar/fabio/> 
 prefix obo:     <http://purl.obolibrary.org/obo/> 
-prefix bibo: <http://purl.org/ontology/bibo/> 
+prefix bibo:    <http://purl.org/ontology/bibo/> 
 prefix d2kab:   <http://ns.inria.fr/d2kab/> 
-prefix dc: <http://purl.org/dc/terms/> 
+prefix dc:      <http://purl.org/dc/terms/> 
 
-SELECT distinct ?paper ?Title ?GeneName ?WTOtrait
-FROM  <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
-FROM  <http://ns.inria.fr/d2kab/ontology/wto/v3>
+SELECT distinct ?paper ?Title ?GeneName ?WTOtrait ?WTOtraitURI
+FROM  NAMED <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
+FROM  NAMED <http://ns.inria.fr/d2kab/ontology/wto/v3>
 WHERE {
-   
-  ?a1 a oa:Annotation; 
-     oa:hasTarget [ oa:hasSource ?source1 ];
-     oa:hasBody  [ a d2kab:Gene; skos:prefLabel ?GeneName ].
-  
-  ?source1 frbr:partOf+ ?paper . 
+    GRAPH <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg> { 
+        ?a1 a oa:Annotation; 
+            oa:hasTarget [ oa:hasSource ?source1 ];
+            oa:hasBody  [ a d2kab:Gene; skos:prefLabel ?GeneName ].
+        ?source1 frbr:partOf+ ?paper . 
 
-  ?a2 a oa:Annotation; 
-      oa:hasTarget [ oa:hasSource ?source2 ]; 
-      oa:hasBody ?body.
-   
-  ?source2 frbr:partOf+ ?paper .
-  
-   {
-   ?body rdf:type ?class; skos:prefLabel ?WTOtrait .
-   ?class rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> .
-   }
-    UNION 
-    {
-    ?body rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340>; 
-          rdfs:label ?WTOtrait .
+        ?a2 a oa:Annotation; 
+            oa:hasTarget [ oa:hasSource ?source2 ]; 
+            oa:hasBody ?WTOtraitURI.
+        ?source2 frbr:partOf+ ?paper .
+        
+        ?paper a fabio:ResearchPaper ; dct:title ?titleURI .
+        ?titleURI rdf:value ?Title.
     }
-    UNION
-    {
-      ?body skos:broader* ?concept ; skos:prefLabel ?WTOtrait .
-      ?concept rdf:type [ rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> ].     
+    
+    GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3>
+    { 
+        {
+            SELECT ?WTOtraitURI ?WTOtrait WHERE {
+                ?WTOtraitURI skos:prefLabel ?WTOtrait ;
+                    a ?class.
+                ?class rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> .
+            }
+        }
+        UNION 
+        {
+            SELECT ?WTOtraitURI ?WTOtrait WHERE {
+                ?WTOtraitURI rdfs:label ?WTOtrait ;
+                    rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> .
+            }
+        }
+        UNION
+        {
+            SELECT ?WTOtraitURI ?WTOtrait WHERE {
+                ?WTOtraitURI skos:prefLabel ?WTOtrait ;
+                    skos:broader* ?concept .
+                ?concept a ?class. 
+                ?class rdfs:subClassOf* <http://opendata.inrae.fr/wto/0000340> .
+            }
+        }
     }
-   ?paper a fabio:ResearchPaper ; dct:title ?titleURI .
-   ?titleURI rdf:value ?Title.
 }
+LIMIT 100

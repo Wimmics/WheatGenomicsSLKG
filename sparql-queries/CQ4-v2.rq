@@ -18,7 +18,7 @@ PREFIX oa: <http://www.w3.org/ns/oa#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?paper ?title ?geneName ?ncbiTaxon ?ncbiTaxonName
-FROM NAMED <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+FROM NAMED <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
 WHERE {
   
   SERVICE <https://taxref.mnhn.fr/sparql>
@@ -29,7 +29,7 @@ WHERE {
    } 
    } 
    
-  GRAPH <http://ns.inria.fr/d2kab/wheatgenomicsslkg> {  
+  GRAPH <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg> {  
   
   ?a1 a oa:Annotation; 
      oa:hasTarget [ oa:hasSource ?source1 ];

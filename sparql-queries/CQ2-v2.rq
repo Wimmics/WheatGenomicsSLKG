@@ -15,16 +15,19 @@ prefix d2kab:   <http://ns.inria.fr/d2kab/>
 prefix dc: <http://purl.org/dc/terms/> 
 
 SELECT distinct ?geneName ?paper1 ?marker ?paper2 
-FROM <http://ns.inria.fr/d2kab/wheatgenomicsslkg>
+FROM <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
 FROM <http://ns.inria.fr/d2kab/ontology/wto/v3> 
 WHERE {
 {
-SELECT distinct ?geneName ?gene ?paper1 WHERE {
+SELECT distinct ?geneName ?gene ?paper1 
+FROM NAMED <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
+FROM NAMED <http://ns.inria.fr/d2kab/ontology/wto/v3> 
+WHERE {
+GRAPH <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg> {
   ?a1 a oa:Annotation; 
    oa:hasTarget [ oa:hasSource ?source1 ];
    oa:hasBody ?body.
-  ?body skos:prefLabel "resistance to Stripe rust" .
-
+ 
   ?a2 a oa:Annotation ;
          oa:hasTarget [ oa:hasSource ?source2 ] ;
          oa:hasBody ?gene .
@@ -33,6 +36,10 @@ SELECT distinct ?geneName ?gene ?paper1 WHERE {
   ?source2 frbr:partOf+ ?paper1 .
   ?paper1  a fabio:ResearchPaper ; dct:title ?source1 .
 }
+}
+GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3> {
+?body skos:prefLabel "resistance to Stripe rust" .
+} 
 }
   ?a3 a oa:Annotation ;
          oa:hasTarget [ oa:hasSource ?source3 ] ;
@@ -47,3 +54,4 @@ SELECT distinct ?geneName ?gene ?paper1 WHERE {
   ?paper2  a fabio:ResearchPaper .
   FILTER (URI(?paper1) != URI(?paper2))
 }
+LIMIT 50

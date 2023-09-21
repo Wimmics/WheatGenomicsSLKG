@@ -21,7 +21,7 @@ WHERE {
   GRAPH <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg> { 
      ?a1 a oa:Annotation; 
       oa:hasTarget [ oa:hasSource ?source1 ] ;  
-      oa:hasBody ?body .
+      oa:hasBody ?WTOtraitURI .
 
    ?source1 frbr:partOf+ ?paper .
     
@@ -34,7 +34,7 @@ WHERE {
    ?paper a fabio:ResearchPaper.
 }
    GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3> {
-       ?body skos:prefLabel "resistance to Leaf rust" .
+       ?WTOtraitURI skos:prefLabel "resistance to Leaf rust" .
 }
 }
 GROUP BY ?GeneName 
