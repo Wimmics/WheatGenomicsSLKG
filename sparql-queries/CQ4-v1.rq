@@ -14,10 +14,11 @@ prefix bibo: <http://purl.org/ontology/bibo/>
 prefix d2kab:   <http://ns.inria.fr/d2kab/> 
 prefix dc: <http://purl.org/dc/terms/> 
 
-SELECT distinct ?paper ?title ?geneName 
+SELECT distinct ?paper ?title ?geneName ?ncbiTaxon
 FROM NAMED <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
-FROM NAMED <http://ns.inria.fr/d2kab/ontology/wto/v3>
+FROM NAMED <http://purl.obolibrary.org/obo/ncbitaxon/ncbitaxon.owl>
 WHERE {
+  VALUES ?ncbiTaxonURI {<http://purl.obolibrary.org/obo/NCBITaxon_208348>}
   GRAPH <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg> {  
   ?a1 a oa:Annotation; 
      oa:hasTarget [ oa:hasSource ?source1 ];
@@ -26,13 +27,16 @@ WHERE {
     
   ?a3 a oa:Annotation; 
       oa:hasTarget [ oa:hasSource ?source2 ]; 
-      oa:hasBody <http://purl.obolibrary.org/obo/NCBITaxon_208348> . 
+      oa:hasBody ?ncbiTaxonURI . 
   
   ?source2 frbr:partOf+ ?paper .
         
   ?paper a fabio:ResearchPaper ; dct:title ?titleURI .
   ?titleURI rdf:value ?title.
-   }
+   }   
+   GRAPH <http://purl.obolibrary.org/obo/ncbitaxon/ncbitaxon.owl> {  
+       ?ncbiTaxonURI rdfs:label ?ncbiTaxon .
+  }
     
 }
 LIMIT 100

@@ -27,10 +27,14 @@ prefix d2kab:   <http://ns.inria.fr/d2kab/>
 prefix dc: <http://purl.org/dc/terms/>
 PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 PREFIX wikidata: <http://www.wikidata.org/entity/>
-prefix d2kab-bsv:   <http://ontology.inrae.fr/bsv/ontology/>
+prefix d2kab_bsv:   <http://ontology.inrae.fr/bsv/ontology/>
+Prefix taxref : <http://taxref.mnhn.fr/lod/property/> .
+SELECT distinct ?paper ?bsv ?taxLabel ?fcuCropName ?taxrefClass 
+FROM  <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
+FROM  <http://ns.inria.fr/d2kab/graph/alignments-fcu-taxref>
 
-SELECT distinct ?paper ?bsv ?taxLabel ?fcuCropName ?taxrefClass WHERE {
-   {
+WHERE {
+{
     SELECT distinct ?paper ?taxon WHERE {       
       ?annot a oa:Annotation; oa:hasTarget [ oa:hasSource ?source ] ; oa:hasBody ?taxon .
       ?taxon a d2kab:Taxon; skos:prefLabel ?label .
@@ -39,7 +43,7 @@ SELECT distinct ?paper ?bsv ?taxLabel ?fcuCropName ?taxrefClass WHERE {
       FILTER(CONTAINS(?label, "Triticum aestivum"))
     }
     LIMIT 100
-    }
+}
     
    SERVICE <http://taxref.i3s.unice.fr/sparql> {
       ?taxrefClass owl:equivalentClass ?taxon ; rdfs:label ?taxLabel . 
@@ -47,11 +51,8 @@ SELECT distinct ?paper ?bsv ?taxLabel ?fcuCropName ?taxrefClass WHERE {
    ?fcuCropName taxref:candidateAlignment_eppo|taxref:candidateAlignment_geves ?taxrefClass .  
     
    SERVICE <http://ontology.inrae.fr/bsv/sparql> { 
-      ?bsv a d2kab-bsv:Bulletin ; dul:isRealizedBy ?s ; dct:spatial ?w  ; dct:date ?date_bsv .
+      ?bsv a d2kab_bsv:Bulletin ; dul:isRealizedBy ?s ; dct:spatial ?w  ; dct:date ?date_bsv .
       ?aa a oa:Annotation ; oa:hasTarget [ oa:hasSource ?s ]  ; oa:hasBody ?fcuCropName .
    }      
 }
-LIMIT 100
-
-
- 
+LIMIT 20

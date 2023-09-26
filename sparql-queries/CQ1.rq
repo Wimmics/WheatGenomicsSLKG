@@ -14,7 +14,7 @@ prefix bibo: <http://purl.org/ontology/bibo/>
 prefix d2kab:   <http://ns.inria.fr/d2kab/> 
 prefix dc: <http://purl.org/dc/terms/> 
 
-SELECT ?GeneName (count(distinct ?paper) as ?NbOcc) 
+SELECT ?GeneName (count(distinct ?paper) as ?NbOcc)
 FROM NAMED <http://ns.inria.fr/d2kab/graph/wheatgenomicsslkg>
 FROM NAMED <http://ns.inria.fr/d2kab/ontology/wto/v3>
 WHERE {
