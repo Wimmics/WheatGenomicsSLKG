@@ -28,3 +28,9 @@ The core part of the **WheatGenomicsSLKG** data model is based on the [W3C Web A
 |DUL ontology  | dul | http://www.ontologydesignpatterns.org/ont/dul/DUL.owl# |
 |OntoLex module for Frequency, Attestation and Corpus information (FrAC)| frac | http://www.w3.org/ns/lemon/frac# | -->
 
+
+## License
+
+The code used to produce the knowledge graph is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+The RDF data files produced by the code are made available under the terms of the [Open Data Commons Attribution License v1.0](https://opendatacommons.org/licenses/by/1-0/) (ODC-By-1.0) license.
