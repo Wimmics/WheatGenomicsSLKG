@@ -8340,7 +8340,7 @@
 
 <http://opendata.inrae.fr/wto/0000549>
       a       d2kab:Phenotype ;
-      skos:prefLabel "resistance to Leaf Rust" .
+      skos:prefLabel "resistance to Leaf rust" .
 
 <http://ns.inria.fr/d2kab/marker/EE8AE348CA5144608FE59F8ABC7CF83A0710B2D3>
       a       d2kab:Marker ;
@@ -11876,7 +11876,7 @@
 
 <http://opendata.inrae.fr/wto/0000561>
       a       d2kab:Phenotype ;
-      skos:prefLabel "resistance to Stem Rust" .
+      skos:prefLabel "resistance to Stem rust" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_54974>
       a       d2kab:Taxon ;
@@ -12404,7 +12404,7 @@
 
 <http://opendata.inrae.fr/wto/0000562>
       a       d2kab:Phenotype ;
-      skos:prefLabel "resistance to Stripe Rust" .
+      skos:prefLabel "resistance to Stripe rust" .
 
 <http://opendata.inrae.fr/wto/0000259>
       a       d2kab:Phenotype ;
