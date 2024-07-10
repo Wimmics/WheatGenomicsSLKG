@@ -30,7 +30,7 @@
   #dct:replaces "" ;
   #owl:priorVersion "http://data.agroportal.lirmm.fr/ontologies/WHEATPHENOTYPE/submissions/8/download" ;
   dct:issued "2023-09-18" ;
-  schema:keywords "trait, phenotype, plant nutrition, plant breeding, agriculture, plant development stage, food"@en ;
+  schema:keywords "trait", "phenotype", "plant nutrition", "plant breeding", "agriculture", "plant development stage", "food"@en ;
   bibo:doi "10.15454/1.4382637738008071E12" ;
   foaf:homepage <https://doi.org/10.15454/1.4382637738008071E12> ;
   dct:creator <https://orcid.org/0000-0002-0577-0595>, "Thierry Marcel", <https://orcid.org/0000-0002-1027-2224> ;

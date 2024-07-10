@@ -99,6 +99,14 @@
 		];
 	];
 	
+    # Straight relation between the annotation and the article
+	rr:predicateObjectMap [
+		rr:predicate schema:about;
+		rr:objectMap [
+			rr:template "https://pubmed.ncbi.nlm.nih.gov/{$.doc_id}";
+		];
+	];
+    
 	rr:predicateObjectMap [
 		rr:predicate oa:hasTarget;
 		rr:objectMap [
