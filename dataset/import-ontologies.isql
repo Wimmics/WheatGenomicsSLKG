@@ -1,0 +1,30 @@
+log_enable(3,1);
+
+SPARQL CLEAR GRAPH <http://purl.org/ontology/bibo/>;
+SPARQL CLEAR GRAPH <http://purl.org/dc/elements/1.1/>;
+SPARQL CLEAR GRAPH <http://purl.org/dc/terms/>;
+SPARQL CLEAR GRAPH <http://purl.org/spar/fabio>;
+SPARQL CLEAR GRAPH <http://www.w3.org/ns/oa#>;
+SPARQL CLEAR GRAPH <http://purl.org/obo/owl/>;
+SPARQL CLEAR GRAPH <http://www.w3.org/2000/01/rdf-schema#>;
+SPARQL CLEAR GRAPH <http://www.w3.org/2004/02/skos/core>;
+SPARQL CLEAR GRAPH <http://ns.inria.fr/d2kab/ontology/wto/v3>;
+SPARQL CLEAR GRAPH <http://ns.inria.fr/d2kab/graph/alignments-fcu-taxref>;
+
+DELETE FROM DB.DBA.load_list;
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'bibo.ttl',                  'http://purl.org/ontology/bibo/');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'dce_1.1_20120614.ttl',      'http://purl.org/dc/elements/1.1/');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'dcterms_20120614.ttl',      'http://purl.org/dc/terms/');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'fabio_20190219.ttl',        'http://purl.org/spar/fabio');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'oa_20161112.ttl',           'http://www.w3.org/ns/oa#');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'oboInOwl.owl',              'http://purl.org/obo/owl/');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'rdf-schema.ttl',            'http://www.w3.org/2000/01/rdf-schema#');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'skos.ttl',                  'http://www.w3.org/2004/02/skos/core');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'WTO*.ttl',                  'http://ns.inria.fr/d2kab/ontology/wto/v3');
+ld_dir ('/dataset_wheatgenomicsslkg/alignements','alignements-taxref-fcu.ttl','http://ns.inria.fr/d2kab/graph/alignments-fcu-taxref');
+
+rdf_loader_run();
+checkpoint;
+
+SELECT * FROM DB.DBA.load_list;
+exit;
