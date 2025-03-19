@@ -4,6 +4,7 @@ SPARQL CLEAR GRAPH <http://purl.org/ontology/bibo/>;
 SPARQL CLEAR GRAPH <http://purl.org/dc/elements/1.1/>;
 SPARQL CLEAR GRAPH <http://purl.org/dc/terms/>;
 SPARQL CLEAR GRAPH <http://purl.org/spar/fabio>;
+SPARQL CLEAR GRAPH <http://purl.org/vocab/frbr/core#>;
 SPARQL CLEAR GRAPH <http://www.w3.org/ns/oa#>;
 SPARQL CLEAR GRAPH <http://purl.org/obo/owl/>;
 SPARQL CLEAR GRAPH <http://www.w3.org/2000/01/rdf-schema#>;
@@ -16,6 +17,7 @@ ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'bibo.ttl',                  'h
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'dce_1.1_20120614.ttl',      'http://purl.org/dc/elements/1.1/');
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'dcterms_20120614.ttl',      'http://purl.org/dc/terms/');
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'fabio_20190219.ttl',        'http://purl.org/spar/fabio');
+ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'frbr-core-20050810.rdf',    'http://purl.org/vocab/frbr/core#');
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'oa_20161112.ttl',           'http://www.w3.org/ns/oa#');
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'oboInOwl.owl',              'http://purl.org/obo/owl/');
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'rdf-schema.ttl',            'http://www.w3.org/2000/01/rdf-schema#');
