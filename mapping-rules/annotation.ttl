@@ -66,6 +66,7 @@
 	rr:subjectMap [
 		rr:template "TargetBlankNode{$._id}";
 		rr:termType rr:BlankNode;
+        rr:class oa:ResourceSelection;
 	];
 	
 	rr:predicateObjectMap [

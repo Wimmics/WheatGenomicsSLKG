@@ -1,6 +1,6 @@
 log_enable(3,1);
 
-SPARQL CLEAR GRAPH  <'http://purl.obolibrary.org/obo/ncbitaxon/ncbitaxon.owl>;
+SPARQL CLEAR GRAPH  <http://purl.obolibrary.org/obo/ncbitaxon/ncbitaxon.owl>;
 
 DELETE FROM DB.DBA.load_list;
 ld_dir ('/dataset_wheatgenomicsslkg/ontologies', 'ncbitaxon.owl', 'http://purl.obolibrary.org/obo/ncbitaxon/ncbitaxon.owl');
